@@ -3,7 +3,7 @@ Library		SeleniumLibrary
 
 
 *** Variables ***
-${message}				My Message Variables
+${message}					My Message Variables
 ${Emailที่ใช้ทดสอบ}			Test@Test
 ${Passwordที่ใช้ทดสอบ}		admin123
 
@@ -30,7 +30,7 @@ Test Case 1: Register User
 	input text					xpath=//input[@data-qa='signup-email']		Test@555			# Enter email address
 	Click element				xpath=//button[@data-qa="signup-button"]						# Click 'Signup' button
 	Element Should Be Visible	xpath=//b[text()='Enter Account Information']					# Verify that 'ENTER ACCOUNT INFORMATION' is visible
-	Click element				id=id_gender1													# Select Title เป็น Radio button      Password, Date of birth
+	Click element				id=id_gender1													# Select Title เป็น Radio button
 	input text					xpath=//input[@data-qa='password']			MyPassword			# Enter Password
 	Select From List By Value	id=days			7												# Select Date of birth (days)
 	Select From List By Value	id=months		7												# Select Date of birth (months)
